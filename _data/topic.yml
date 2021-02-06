@@ -1,0 +1,11 @@
+title: Topics
+topics:
+
+- title: Topic Type 1
+  url: type1.html
+
+- title: Topic Type 2
+  url: type2.html
+
+- title: Topic Type 3
+  url: type3.html

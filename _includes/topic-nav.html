@@ -1,0 +1,6 @@
+<h2>{{ site.data.topic.title }}</h2>
+<ul>
+   {% for item in site.data.topic.topics %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>

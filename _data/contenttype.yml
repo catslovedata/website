@@ -1,0 +1,11 @@
+title: Content Types
+contenttypes:
+
+- title: Content Type 1
+  url: type1.html
+
+- title: Content Type 2
+  url: type2.html
+
+- title: Content Type 3
+  url: type3.html
