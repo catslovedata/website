@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $openSans;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $openSans;
   color: $darkerGray;
   font-weight: bold;
 
@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: $merriweather;
+  font-weight: 700;
   font-size: 30px;
   a {
     color: inherit;
@@ -152,6 +154,13 @@ img {
     clear: both;
 }
 
+.excerpt {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: $merriweather;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -161,11 +170,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 5px 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -175,8 +184,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin-right: 15px;
 
   @include mobile {
@@ -187,6 +196,7 @@ img {
 
   img {
     border-radius: 5px;
+    border: 1px solid $lightGray;    
   }
 }
 
