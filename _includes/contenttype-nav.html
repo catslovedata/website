@@ -1,6 +1,6 @@
 <h2>{{ site.data.contenttype.title }}</h2>
 <ul>
    {% for item in site.data.contenttype.contenttypes %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><a href="{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a></li>
    {% endfor %}
 </ul>
