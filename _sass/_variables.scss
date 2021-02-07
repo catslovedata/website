@@ -16,10 +16,8 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$openSans: 'Open Sans', Arial, sans-serif;
-$merriweather: 'Merriweather', serif;
+$siteSans: 'Open Sans', Arial, sans-serif;
+$siteSerif: 'Merriweather', serif;
 
 // Mobile breakpoints
 @mixin mobile {

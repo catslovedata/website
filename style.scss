@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $openSans;
+  font: 18px/1.4 $siteSans;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $openSans;
+  font-family: $siteSans;
   color: $darkerGray;
   font-weight: bold;
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: $merriweather;
+  font-family: $siteSerif;
   font-weight: 700;
   font-size: 30px;
   a {
@@ -117,21 +117,6 @@ img {
   max-width: none;
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// placeholder
-.tax-content-type {
-  color: $pink;
-}
-
-// placeholder
-.tax-topic {
-  color: $blue;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -158,7 +143,7 @@ img {
   font-style: italic;
   font-size: 20px;
   font-weight: 300;
-  font-family: $merriweather;
+  font-family: $siteSerif;
 }
 
 /*********************/
@@ -214,7 +199,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $siteSerif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -232,9 +217,11 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  margin-top: 20px;
+  font-family: $siteSans;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
 
   @include mobile {
     float: none;
@@ -272,13 +259,18 @@ nav {
 }
 
 .post {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
+    font-family: $siteSerif;
+    font-weight: 300;
   }
 
   .comments {
@@ -291,11 +283,49 @@ nav {
   }
 }
 
+.meta-wrapper {
+  font-family: $siteSans;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+// Handle navigation lists for sidebar
+.sidebar-nav-list ul li {
+  font-family: $siteSans;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.sidebar-nav-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.date {
+  color: $lightGray;
+}
+
+.tax-content-type {
+  color: $pink; // placeholder - remove this from _variables
+}
+
+// placeholder
+.tax-topic {
+  color: $blue; // placeholder - remove this from _variables
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+}
+
+.entry {
+  font-family: $siteSans;
 }
 
 footer {

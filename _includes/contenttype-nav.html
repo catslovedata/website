@@ -1,6 +1,8 @@
-<h2>{{ site.data.contenttype.title }}</h2>
-<ul>
-   {% for item in site.data.contenttype.contenttypes %}
+<!--<h2>{{ site.data.contenttype.title }}</h2>-->
+<div class="sidebar-nav-list">
+   <ul>
+      {% for item in site.data.contenttype.contenttypes %}
       <li><a href="{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a></li>
-   {% endfor %}
-</ul>
+      {% endfor %}
+   </ul>
+</div>
