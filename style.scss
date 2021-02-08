@@ -256,7 +256,7 @@ nav {
   border-bottom: none;
 }
 
-.post {
+.content {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-style: italic;
@@ -288,40 +288,33 @@ nav {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 12px;
+  .date {
+    color: $lightGray;
+  }
+  .tax-content-type {
+    color: $pink; // placeholder - remove this from _variables
+  }
+  .tax-topic {
+    color: $blue; // placeholder - remove this from _variables
+  }
 }
 
-// Handle navigation lists for sidebar
-.sidebar-nav-list ul li {
+//
+// Sidebar nav
+//
+
+.sidebar-nav-list {
+  ul li {
   font-family: $siteSans;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 16px;
   padding-bottom: 4px;
-}
-
-.sidebar-nav-list ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.date {
-  color: $lightGray;
-}
-
-.tax-content-type {
-  color: $pink; // placeholder - remove this from _variables
-}
-
-// placeholder
-.tax-topic {
-  color: $blue; // placeholder - remove this from _variables
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
 // This is the default for anything in a post/page etc which is not more specifically defined
@@ -333,8 +326,7 @@ nav {
   letter-spacing: 0px;
   line-height: 1.6;
 }
-
-.post > .title {
+.content > .title {
   font-family: $siteSerif;
   font-weight: 700;
   font-style: normal;
@@ -345,7 +337,13 @@ footer {
   text-align: center;
 }
 
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
