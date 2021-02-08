@@ -9,12 +9,12 @@ layout: default-sidebar
   <p class="excerpt">{{ page.excerpt }}</p>
   {% endif %}
 
-  <!--to do: get these dynamically from the contenttype _data and get the urls for contenttype and topic-->
   <div class="meta-wrapper">
     <span class="date"><i class="bi bi-calendar3"></i> {{ page.date | date: "%d-%b-%Y" }}</span>
     |
-    <span class="tax-content-type"><i class="bi bi-window"></i> {{ page.contenttype }}</span>
+    <span class="tax-content-type"><i class="bi {{ site.data.taxonomy.contenttypes.[page.contenttype].icon }}"></i> {{ page.contenttype }}</span>
     |
+    <!--to do-->
     <span class="tax-topic"><i class="bi bi-chat-square-dots"></i> {{ page.topic }}</span>
   </div>
   <hr>
@@ -25,5 +25,4 @@ layout: default-sidebar
   <hr />
   <p><i class="bi bi-tags-fill"></i> one, two, three</p>
   <!--to do-->
-
 </article>

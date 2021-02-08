@@ -1,0 +1,16 @@
+contenttypes:
+  general:
+    title: general stuff
+    url: type1.html
+    icon: bi-cursor
+
+
+
+topics:
+- meta:
+  title: meta
+  url: type1.html
+
+- topic2:
+  title: topic type 2
+  url: type2.html
