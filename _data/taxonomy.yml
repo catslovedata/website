@@ -2,15 +2,17 @@ contenttypes:
   general:
     title: general stuff
     url: type1.html
-    icon: bi-cursor
+    icon: bi:arrow-left-circle-fill
 
 
 
 topics:
-- meta:
-  title: meta
-  url: type1.html
+  meta:
+    title: meta
+    url: type1.html
+    icon: cil:cat
 
-- topic2:
-  title: topic type 2
-  url: type2.html
+  topic2:
+    title: topic type 2
+    url: type2.html
+    icon: icons8:cat-footprint

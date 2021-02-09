@@ -12,10 +12,9 @@ layout: default-sidebar
   <div class="meta-wrapper">
     <span class="date"><i class="bi bi-calendar3"></i> {{ page.date | date: "%d-%b-%Y" }}</span>
     |
-    <span class="tax-content-type"><i class="bi {{ site.data.taxonomy.contenttypes.[page.contenttype].icon }}"></i> {{ page.contenttype }}</span>
+    <span class="tax-content-type"><span class="iconify" data-icon="{{ site.data.taxonomy.contenttypes.[page.contenttype].icon }}"></span> {{ page.contenttype }}</span>
     |
-    <!--to do-->
-    <span class="tax-topic"><i class="bi bi-chat-square-dots"></i> {{ page.topic }}</span>
+    <span class="tax-topic"><span class="iconify" data-icon="{{ site.data.taxonomy.topics.[page.topic].icon }}"></span> {{ page.topic }}</span>
   </div>
   <hr>
 
