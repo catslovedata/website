@@ -4,6 +4,7 @@ title: Just a little demo
 contenttype: general
 topic: meta
 excerpt: Here's one I prepared earlier. Typically this is a couple of sentences or so. I think this ought to be enough.
+tags: tag1 tag2 tag-three tag-4
 ---
 
 ## A header

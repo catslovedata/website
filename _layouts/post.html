@@ -18,10 +18,17 @@ layout: default-sidebar
   </div>
   <hr>
 
+  {% include google-ad-responsive.html %}
+
   <div class="entry">
     {{ content }}
   </div>
   <hr />
-  <p><i class="bi bi-tags-fill"></i> one, two, three</p>
-  <!--to do-->
+  <p><i class="bi bi-tags-fill"></i>
+    {% for tag in page.tags %}
+    <span class="cld-tag">{{ tag }}</span>
+    {% endfor %}
+    </p>
+
+
 </article>

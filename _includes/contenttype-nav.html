@@ -1,9 +1,11 @@
 <!--<h2>{{ site.data.contenttype.title }}</h2>-->
-<div class="sidebar-nav-list">
+<div class="cld-nav-list">
    <ul>
       {% for item in site.data.taxonomy.contenttypes %}
-      <li>{% if item[1].icon %}<span class="iconify" data-icon="{{ item[1].icon }}"></span>{% endif %}
-         <a href="{{ site.baseurl }}/{{ item[1].url }}">{{ item[1].title }}</a>{% if page.contenttype == item[1].title %} * {% endif %}</li>
+      <li>
+         <a href="{{ site.baseurl }}/{{ item[1].url }}">
+            {% if item[1].icon %}<span class="iconify" data-icon="{{ item[1].icon }}"></span>{% endif %}
+            {{ item[1].title }}</a>{% if page.contenttype == item[1].title %} * {% endif %}</li>
       {% endfor %}
    </ul>
 </div>

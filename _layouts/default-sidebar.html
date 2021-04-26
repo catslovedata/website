@@ -11,7 +11,7 @@
     <div class="row">
       <!-- Only show this sidebar for medium+ layout-->
       <div class="col-md-4 col-lg-3 d-none d-md-block">
-         <div>{% include masthead.html %}</div>
+         <div>{% include masthead-new.html %}</div>
          <div>{% include sidebar.html %}</div>
       </div>
 
@@ -19,14 +19,20 @@
 
          <!-- Only show this masthead and the collapsibles for small and xs layout-->
          <!-- Probably need some specific styling here for the menus -->
-        <div class="col-xs-12 d-md-none">{% include masthead.html %}</div>
+        <div class="col-xs-12 d-md-none cld-small">{% include masthead-new.html %}</div>
         <div class="col-xs-12 d-md-none">
-          <a href="#ContentType" data-toggle="collapse">Content Types <span class="iconify" data-icon="bi:chevron-double-down"></span></a>
-          <div id="ContentType" class="collapse">{% include contenttype-nav.html %}</div>
+          <div class="expandable">
+            <div class="expandable-top"><a href="#ContentType" data-toggle="collapse">Content Types <span class="iconify" data-icon="bi:chevron-double-down"></span></a></div>
+            <div id="ContentType" class="collapse expandable-content">{% include contenttype-nav.html %}</div>
+          </div>
+          
         </div>
         <div class="col-xs-12 d-md-none">
-          <a href="#Topic" data-toggle="collapse">Topics <span class="iconify" data-icon="bi:chevron-double-down"></span></a>
-          <div id="Topic" class="collapse">{% include topic-nav.html %}</div>
+          <div class="expandable">
+            <div class="expandable-top"><a href="#Topic" data-toggle="collapse">Topics <span class="iconify" data-icon="bi:chevron-double-down"></span></a></div>
+            <div id="Topic" class="collapse expandable-content">{% include topic-nav.html %}</div>
+          </div>
+          
         </div>
         <div class="col-xs-12">
           {{ content }}
@@ -42,14 +48,6 @@
     </div>
 
     </div>
-
-    <!--
-    <a href="#demo" data-toggle="collapse">Collapsible</a>
-
-    <div id="demo" class="collapse">
-    Lorem ipsum dolor text....
-    </div>
-    -->
 
   </div>
 

@@ -1,0 +1,22 @@
+---
+layout: default-sidebar
+---
+
+<article class="post content">
+  <h1 class="title"><i class="bi bi-tags-fill"></i> <span class="cld-tag">{{ page.title }}</span></h1>
+
+  <div class="entry">
+    {% for post in site.tags[page.title] %}
+    <p><span class="tax-content-type iconify" data-icon="{{ site.data.taxonomy.contenttypes.[post.contenttype].icon }}" title="{{ site.data.taxonomy.contenttypes.[post.contenttype].title }}"></span>
+      |
+      <span class="tax-topic iconify" data-icon="{{ site.data.taxonomy.topics.[post.topic].icon }}" title="{{ site.data.taxonomy.topics.[post.topic].title }}"></span>
+      <a href="{{ post.url }}">{{ post.title }}</a></p>
+    <p>{{ post.excerpt }}</p>
+    {% endfor %}
+  </div>
+
+
+
+  <hr />
+
+</article>

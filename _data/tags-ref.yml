@@ -1,0 +1,43 @@
+contenttypes:
+  general:
+    title: general stuff
+    url: type1.html
+    icon: bi:arrow-left-circle-fill
+  type1:
+    title: type 1 content
+    url: type1.html
+    icon: bi:arrow-left-circle-fill
+  type2:
+    title: type 2 content
+    url: type1.html
+    icon: bi:arrow-left-circle-fill
+  sample-data:
+    title: sample data
+    url: x.html
+    icon: bi:table
+  downloads:
+    title: downloads
+    url: x.html
+    icon: ic:baseline-download
+
+topics:
+  meta:
+    title: meta
+    url: type1.html
+    icon: cil:cat
+  topic2:
+    title: topic type 2
+    url: type2.html
+    icon: icons8:cat-footprint
+  topic3:
+    title: topic type 3
+    url: type2.html
+    icon: icons8:cat-footprint
+  topic4:
+    title: topic type 4
+    url: type2.html
+    icon: icons8:cat-footprint
+  data-viz:
+    title: data viz
+    url: x.html
+    icon: ic:outline-auto-graph
