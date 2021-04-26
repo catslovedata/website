@@ -2,7 +2,6 @@
 <html>
 
 {% include head.html %}
-
 <body>
 
 
@@ -10,14 +9,47 @@
   <div id="main" role="main" class="container">
 
     <div class="row">
-      <div class="col-sm-3">
-         {% include masthead.html %}
-        {% include sidebar.html %}
+      <!-- Only show this sidebar for medium+ layout-->
+      <div class="col-md-4 col-lg-3 d-none d-md-block">
+         <div>{% include masthead.html %}</div>
+         <div>{% include sidebar.html %}</div>
       </div>
-      <div class="col-sm-9">
-        {{ content }}
+
+      <div class="col-md-8 col-lg-9"> <!-- implied: xs and sm take up the full width -->
+
+         <!-- Only show this masthead and the collapsibles for small and xs layout-->
+         <!-- Probably need some specific styling here for the menus -->
+        <div class="col-xs-12 d-md-none">{% include masthead.html %}</div>
+        <div class="col-xs-12 d-md-none">
+          <a href="#ContentType" data-toggle="collapse">Content Types <span class="iconify" data-icon="bi:chevron-double-down"></span></a>
+          <div id="ContentType" class="collapse">{% include contenttype-nav.html %}</div>
+        </div>
+        <div class="col-xs-12 d-md-none">
+          <a href="#Topic" data-toggle="collapse">Topics <span class="iconify" data-icon="bi:chevron-double-down"></span></a>
+          <div id="Topic" class="collapse">{% include topic-nav.html %}</div>
+        </div>
+        <div class="col-xs-12">
+          {{ content }}
+        </div>
       </div>
     </div>
+
+    <div class="row">
+      <!-- Only show this here for small and xs layout, but probably needs styling or a different version -->
+      <div class="col-xs-12 d-md-none">
+        {% include blurb.html %}
+      </div>
+    </div>
+
+    </div>
+
+    <!--
+    <a href="#demo" data-toggle="collapse">Collapsible</a>
+
+    <div id="demo" class="collapse">
+    Lorem ipsum dolor text....
+    </div>
+    -->
 
   </div>
 
@@ -30,7 +62,7 @@
   </div>
 
   {% include analytics.html %}
-  {% include includejs.html %}
+
 </body>
 
 </html>

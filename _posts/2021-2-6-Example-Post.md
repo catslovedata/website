@@ -41,8 +41,3 @@ Phasellus eu libero in sem blandit luctus id eu felis. Ut vitae odio hendrerit, 
 ```
 add n to x
 ```
-
-### An image (taken from the Github doco)
-
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
